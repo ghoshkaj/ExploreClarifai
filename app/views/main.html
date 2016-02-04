@@ -1,0 +1,17 @@
+<div class="jumbotron">
+
+  <p><a class="btn btn-primary" ng-click=getRandomImage()>Get New Image</a></p>
+  <p> Hello! {{num}} </p>
+  <p><img ng-src={{image_url}} alt="Random Image" style="width:300px;height:300px;"></p>
+
+  <p><a class="btn btn-primary" ng-click=getTags()>Get Tags</a></p>
+
+  <p ng-repeat='tag in Tags'>{{tag}}</p>
+
+  <!--<h1>'Allo, 'Allo!</h1>-->
+  <!--<p class="lead">-->
+    <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
+    <!--Always a pleasure scaffolding your apps.-->
+  <!--</p>-->
+  <!--<p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>-->
+</div>

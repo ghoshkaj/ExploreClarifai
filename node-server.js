@@ -11,9 +11,6 @@ var favicon = require('serve-favicon');
 var morgan = require('morgan'); // formerly express.logger
 var errorhandler = require('errorhandler');
 var Clarifai = require('./clarifai_node.js');
-//var location = require('./routeFiles/location.js');
-//var agency = require('./routeFiles/agency.js');
-//var dataSource = require('./routeFiles/dataSource.js');
 var app = express();
 
 // all environments
@@ -39,9 +36,3 @@ if ('development' === app.get('env')) {
 http.createServer(app).listen(app.get('port'), function () {
   console.log('myApp server listening on port ' + app.get('port'));
 });
-
-Clarifai.initAPI("QFv4z9eNEKGAGNLl9hHtb7tIZ9iopyuV8bTxavR6", "svX3BEQAnH1dw1HFuGIFHLUggs133cO3ff7RrIVI" );
-
-//app.get('/location', location.getLocation);
-//app.get('/dataSource', dataSource.getDataSource);
-//app.get('/agency', agency.getAgency);

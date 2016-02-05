@@ -10,7 +10,6 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var morgan = require('morgan'); // formerly express.logger
 var errorhandler = require('errorhandler');
-var Clarifai = require('./clarifai_node.js');
 var app = express();
 
 // all environments
